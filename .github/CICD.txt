@@ -1,0 +1,66 @@
+```
+# cd 到你的專案目錄：
+cd D:\Users\User\Desktop\Julia\DE
+
+# 暫時性的解決方案 (如果沒有管理員權限)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+# 啟動虛擬環境
+.\venv\Scripts\activate
+
+# 重新安裝所有套件
+pip install -e .
+```
+
+```
+1. 初始化本地 Git 儲存庫
+git init
+
+2. 將本地儲存庫連接到遠端 GitHub 儲存庫
+git remote add origin
+
+3. 查看當前本地分支
+git branch
+
+4. 將本地分支從 master 重命名為 main
+git branch -M main
+
+5. 將所有變更添加到 Git 暫存區
+git add .
+
+6. 提交變更到本地儲存庫
+git commit -m "你的提交訊息"
+
+7. 將本地提交推送到遠端 GitHub 儲存庫
+git push -u origin main
+```
+
+
+```
+cd：變更到指定路徑的目錄。
+cd D:\Users\User\Desktop\Julia\NYC_Taxi
+
+ls：列出指定目錄下的檔案和子目錄。
+ls data/raw
+```
+
+
+```
+DB_HOST: postgres
+
+DB_USER: postgres
+
+DB_PASSWORD: 100888
+
+DB_PORT: 5432
+
+DB_NAME: NYC_Taxi
+
+DB_TABLE_NAME: green_tripdata
+
+RAW_DATA_PATH: data/raw
+
+PROCESSED_DATA_PATH: data/processed
+
+SQL_DIR: SQL
+```

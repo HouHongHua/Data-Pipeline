@@ -1,0 +1,6 @@
+pyproject.toml
+nyc_taxi_data_pipeline.egg-info/PKG-INFO
+nyc_taxi_data_pipeline.egg-info/SOURCES.txt
+nyc_taxi_data_pipeline.egg-info/dependency_links.txt
+nyc_taxi_data_pipeline.egg-info/requires.txt
+nyc_taxi_data_pipeline.egg-info/top_level.txt
