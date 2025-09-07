@@ -30,9 +30,11 @@ git add .
 
 6. 提交變更到本地儲存庫
 git commit -m "你的提交訊息"
+git commit -m "fix: Ensure model directory exists"
 
 7. 將本地提交推送到遠端 GitHub 儲存庫
 git push -u origin main
+git push
 ```
 
 
