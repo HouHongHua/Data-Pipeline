@@ -79,6 +79,10 @@ def train_tip_prediction_model(df: pd.DataFrame, training_months: list, testing_
     print(f"R-squared (R2): {r2:.2f}")
     
     model_output_path = 'model/green_taxi_tip_prediction_model.joblib'
+    
+    output_dir = os.path.dirname(model_output_path)
+    os.makedirs(output_dir, exist_ok=True)
+
     joblib.dump(model_pipeline, model_output_path)
     print(f"\n Save Model: {model_output_path}")
 
