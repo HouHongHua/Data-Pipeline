@@ -17,7 +17,7 @@ pip install -e .
 git init
 
 2. 將本地儲存庫連接到遠端 GitHub 儲存庫
-git remote add origin
+git remote add origin https://github.com/HouHongHua/Data-Pipeline.git
 
 3. 查看當前本地分支
 git branch

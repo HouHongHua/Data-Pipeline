@@ -6,9 +6,6 @@ from config import get_db_engine, PROCESSED_DATA_PATH
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def transform_and_export_data(engine):
-    """
-    從資料庫查詢、篩選資料，並匯出為 Parquet 檔案。
-    """
     query = """
     SELECT
         "VendorID", "lpep_pickup_datetime", "lpep_dropoff_datetime",

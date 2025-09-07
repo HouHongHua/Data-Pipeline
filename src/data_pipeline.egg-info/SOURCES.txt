@@ -4,3 +4,4 @@ src/data_pipeline.egg-info/SOURCES.txt
 src/data_pipeline.egg-info/dependency_links.txt
 src/data_pipeline.egg-info/requires.txt
 src/data_pipeline.egg-info/top_level.txt
+test/test_pipeline.py
