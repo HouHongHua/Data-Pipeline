@@ -3,6 +3,7 @@ This project aims to establish an automated data pipeline for processing New Yor
 
 The process includes importing raw Parquet files into a PostgreSQL database, filtering the data, and training a machine learning model to predict tip amounts.
 
+本專案旨在為紐約市計程車數據（目前專注於綠色計程車）建立一個自動化的數據處理管道。整個流程包含匯入原始 Parquet 格式的數據，透過 PostgreSQL 資料庫進行篩選，並訓練一個機器學習模型來預測小費金額。
 # Project Target
 **Data Import**：https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 
@@ -51,7 +52,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 3. Install Dependencies
 ```
 This project uses pyproject.toml to manage dependencies. After activating the virtual environment, install all dependencies:  
-pip install -e .
+pip install -e .[dev]
 ```
 4. Set PostgreSQL
 ```
@@ -63,12 +64,14 @@ https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
 ```
 6. Configure .env file
 ```
+# PostgreSQL 資料庫憑證
 DB_USER=postgres
 DB_PASSWORD=your_actual_db_password 
 DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=NYC_Taxi
 DB_TABLE_NAME=green_tripdata
+# 檔案路徑 (使用相對路徑)
 RAW_DATA_PATH=data/raw 
 PROCESSED_DATA_PATH=processed 
 SQL_DIR=NYC_Taxi/sql 
@@ -146,7 +149,7 @@ git push -u origin main
 Then:
 cd D:\Users\User\Desktop\Julia\NYC_Taxi
 git add .
-git commit -m "docs: Update README and chore: Adjust model training/testing months"
+git commit -m "docs: Update README"
 git push origin main
 ```
 
